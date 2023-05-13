@@ -30,8 +30,9 @@ manipulator motion. Forward kinematics (for a robot arm) takes as input joint an
 effector. The end-effector/gripper is a device or tool that connects at the end of a robotic arm.
 ## Inverse Kinematics
 ![WhatsApp Image 2023-05-08 at 17 52 40](https://github.com/DJR-18/I04/assets/122470780/07db4b4e-b316-4ddc-9e2f-9bfd7172f934)
-This is inverse kinematics block where we give translation vector which gets converted
-to homogeneous matrix and which gets extracted to angles through inv kinematics block.
+This is inverse kinematics block where we give translation vector which gets converted to homogeneous matrix and which gets extracted to angles through
+inv kinematics block. The inverseKinematics System object creates an inverse kinematic (IK) solver to calculate joint configurations for a desired end-
+effector pose based on a specified rigid body tree model.
 ## Simscape multibody robot manipulator
 ![WhatsApp Image 2023-05-08 at 17 52 39](https://github.com/DJR-18/I04/assets/122470780/bc820556-da53-4fe1-b00e-d9ad8516d0ca)
 ![WhatsApp Image 2023-05-08 at 17 52 37](https://github.com/DJR-18/I04/assets/122470780/ec80d5c1-218e-4824-9071-351078f7a8f2)
