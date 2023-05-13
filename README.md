@@ -2,12 +2,12 @@
 ### Project Guide
 Shivani Chanda - RAS Chair
 ### Mentors
-Krisha Shah
+Krisha Shah,
 D.Jagannadha Reddy
 ### Members
-Navitha R
-Suksha Kiran
-Rohit Karatagi
+Navitha R,
+Suksha Kiran,
+Rohit Karatagi,
 Pranav Sudheer
 ## Acknowledgements
 
