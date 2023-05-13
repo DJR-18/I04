@@ -21,6 +21,7 @@ warehouses.
 A robotic arm is a type of mechanical arm, usually programmable, with similar functions
 to a human arm. A robotic arm can be used for automating various tasks which reduces
 human effort which in turn will increase productivity.
+
 ![image](https://github.com/DJR-18/I04/assets/122470780/5522385e-4698-4553-ac40-2a70794c7922)
 ## Forward Kinematics
 ![WhatsApp Image 2023-05-08 at 17 52 38](https://github.com/DJR-18/I04/assets/122470780/70fe8c38-aff5-4f88-8764-e444a4a46a70)
