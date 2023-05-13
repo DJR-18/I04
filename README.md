@@ -25,8 +25,9 @@ human effort which in turn will increase productivity.
 ![image](https://github.com/DJR-18/I04/assets/122470780/5522385e-4698-4553-ac40-2a70794c7922)
 ## Forward Kinematics
 ![WhatsApp Image 2023-05-08 at 17 52 38](https://github.com/DJR-18/I04/assets/122470780/70fe8c38-aff5-4f88-8764-e444a4a46a70)
-This is forward kinematics block which receives angles and gives homogeneous matrix
-which gets converted to translation matrix and hence we get our manipulator motion.
+This is forward kinematics block which receives angles and gives homogeneous matrix which gets converted to translation matrix and hence we get our
+manipulator motion.Forward kinematics (for a robot arm) takes as input joint angles and calculates the Cartesian position and orientation of the end
+effector. The end-effector/gripper is a device or tool that connects at the end of a robotic arm.
 ## Inverse Kinematics
 ![WhatsApp Image 2023-05-08 at 17 52 40](https://github.com/DJR-18/I04/assets/122470780/07db4b4e-b316-4ddc-9e2f-9bfd7172f934)
 This is inverse kinematics block where we give translation vector which gets converted
