@@ -44,6 +44,9 @@ port gives the ideal motion and the third port gives the velocity.
 
 ## References
 https://ch.mathworks.com/help/sm/getting-started-with-simmechanics.html
+
 https://ch.mathworks.com/help/simulink/slref/pidcontroller.html
+
 https://ch.mathworks.com/help/sm/ug/joints.html
+
 https://ch.mathworks.com/help/stateflow/getting-started.html?s_tid=CRUX_lftnav
