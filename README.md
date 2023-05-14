@@ -3,7 +3,7 @@
 Shivani Chanda - RAS Chair
 ### Mentors
 Krisha Shah,
-D.Jagannadha Reddy
+D Jagannadha Reddy
 ### Members
 Navitha R,
 Suksha Kiran,
