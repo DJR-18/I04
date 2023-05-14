@@ -14,35 +14,37 @@ https://in.mathworks.com/help/robotics/ug/pick-and-place-workflow-using-stateflo
 ## Aim
 The project aims to develop a robotic arm, in simulation, with an objective of pick and place mechanism.
 ## Introduction
-A robotic arm is a type of mechanical arm, usually programmable, with similar functions
-to a human arm. A robotic arm can be used for automating various tasks which reduces
-human effort which in turn will increase productivity.
+A robotic arm is a type of mechanical arm, usually programmable, with similar functions to a human arm. A robotic arm can be used for automating various tasks which reduces human effort which in turn
+will increase productivity.
 
 ![image](https://github.com/DJR-18/I04/assets/122470780/5522385e-4698-4553-ac40-2a70794c7922)
 ## Trajectory Generation
 The aim of the trajectory generation is to generate inputs to the motion control system which ensures that the planned trajectory is executed. We chose a polynomial trajectory generation method to
 produce a trajectory with the waypoints, timepoints and velocity points given as an input to the control system. The output translation vector goes as an input to the Inverse Kinematics block.
-## Forward Kinematics
-![WhatsApp Image 2023-05-08 at 17 52 38](https://github.com/DJR-18/I04/assets/122470780/70fe8c38-aff5-4f88-8764-e444a4a46a70)
-This is forward kinematics block which receives angles and gives homogeneous matrix which gets converted to translation matrix and hence we get our
-manipulator motion. Forward kinematics (for a robot arm) takes as input joint angles and calculates the Cartesian position and orientation of the end
-effector. The end-effector/gripper is a device or tool that connects at the end of a robotic arm.
 ## Inverse Kinematics
 ![WhatsApp Image 2023-05-08 at 17 52 40](https://github.com/DJR-18/I04/assets/122470780/07db4b4e-b316-4ddc-9e2f-9bfd7172f934)
-This is inverse kinematics block where we give translation vector which gets converted to homogeneous matrix and which gets extracted to angles through
-inv kinematics block. The inverseKinematics System object creates an inverse kinematic (IK) solver to calculate joint configurations for a desired end-
-effector pose based on a specified rigid body tree model.
+Inverse kinematics is the use of kinematic equations to determine the motion of a robot to reach a desired position. In this block system, the “Coordinate Transformation Conversion” block receives a
+translation vector which gets converted to a homogeneous matrix which is provided as an input to the “Inverse Kinematics” block which extracts the angles from the matrix. Hence, the inverse Kinematics
+System object creates an Inverse Kinematic (IK) solver to calculate joint configurations for a desired end- effector pose based on a specified rigid body tree model.
 ## Robot arm manipulator
 ![WhatsApp Image 2023-05-08 at 17 52 39](https://github.com/DJR-18/I04/assets/122470780/bc820556-da53-4fe1-b00e-d9ad8516d0ca)
 ![WhatsApp Image 2023-05-08 at 17 52 37](https://github.com/DJR-18/I04/assets/122470780/ec80d5c1-218e-4824-9071-351078f7a8f2)
+The model is an RRRR 4 DOF Robot Manipulator. We used “Rigid Transform” Blocks to keep shifting the World Frame to the centre of the bodies.It consists of a fixed base plate, a rotating base, and 3
+links with revolute joints rotating in a direction perpendicular to rotation of the base. A rigid end effector was attached to the end of the last link for pick and place functionality. This block
+system receives the joint angles from inverse kinematics block which are passed on to the forward kinematics block.
+## Forward Kinematics
+![WhatsApp Image 2023-05-08 at 17 52 38](https://github.com/DJR-18/I04/assets/122470780/70fe8c38-aff5-4f88-8764-e444a4a46a70)
+Forward Kinematics refers to the use of kinematic equations of a robot to compute the position of the end effector from specified values for the joint parameters. We simulated the forward kinematics
+using Simulink Robotics Toolkit blocks which uses DH parameters to develop a transformation matrix consisting of four parameters primarily, providing us with the coordinates of the joints at respective
+joint angles and length parameters. In this control system, the “Get Transform” block receives the angles and provides a homogeneous transformation matrix as an input to the next block namely
+“Coordinate Transformation Conversion” block which converts the input to a translation matrix whose data is provided to the “Scope” block. The graph appearing on the Scope helps us rectify the actual
+motion versus the ideal motion it was supposed to travel.
 ## Final block system
 ![WhatsApp Image 2023-05-08 at 17 52 41](https://github.com/DJR-18/I04/assets/122470780/24cff656-6c7d-4269-be67-7d87f8f8fe92)
-This is the final block system where first port of scope is the actual motion second
-port gives the ideal motion and the third port gives the velocity.
+This is the final block system where first port of scope is the actual motion second port gives the ideal motion and the third port gives the velocity.
 ## Conclusion
-A robotic arm system can provide greater reliability in polishing workpieces and smart manufacturing. The robot  controller  dynamics  and  dynamics  are
-then analyzed  and  simulated  in  the  Matlab/Simulink environment with the Robotics toolkit. In the future, we will study the creation of robotic
-trajectories and control forces in industrial applications.
+A robotic arm system can provide greater reliability in polishing workpieces and smart manufacturing. The robot  controller  dynamics  and  dynamics  are then analyzed  and  simulated  in  the
+Matlab/Simulink environment with the Robotics toolkit. In the future, we will study the creation of robotic trajectories and control forces in industrial applications.
 ## References
 https://ch.mathworks.com/help/sm/getting-started-with-simmechanics.html
 
