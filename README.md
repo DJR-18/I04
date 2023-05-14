@@ -34,7 +34,7 @@ The model is an RRRR 4 DOF Robot Manipulator. We used “Rigid Transform” Bloc
 links with revolute joints rotating in a direction perpendicular to rotation of the base. A rigid end effector was attached to the end of the last link for pick and place functionality. This block
 system receives the joint angles from inverse kinematics block which are passed on to the forward kinematics block.
 ## Forward Kinematics
-![WhatsApp Image 2023-05-08 at 17 52 38](https://github.com/DJR-18/I04/assets/122470780/70fe8c38-aff5-4f88-8764-e444a4a46a70)
+![WhatsApp Image 2023-05-14 at 22 55 28](https://github.com/DJR-18/I04/assets/122470780/63ac77fe-ec1b-4e76-84c9-d0b8fdc83e11)
 Forward Kinematics refers to the use of kinematic equations of a robot to compute the position of the end effector from specified values for the joint parameters. We simulated the forward kinematics
 using Simulink Robotics Toolkit blocks which uses DH parameters to develop a transformation matrix consisting of four parameters primarily, providing us with the coordinates of the joints at respective
 joint angles and length parameters. In this control system, the “Get Transform” block receives the angles and provides a homogeneous transformation matrix as an input to the next block namely
