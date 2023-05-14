@@ -12,11 +12,7 @@ Pranav Sudheer
 ## Acknowledgements
 https://in.mathworks.com/help/robotics/ug/pick-and-place-workflow-using-stateflow.html
 ## Aim
-The project aims to develop a robotic arm, in simulation, with an objective of pick and
-place mechanism. We’ll mainly simulate the workspace,forward  kinematics and inverse
-kinematics of the arm on MATLAB. If time permits, this can further be programmed to
-segregate objects based on shape, size and color and then such bots can be used in
-warehouses.
+The project aims to develop a robotic arm, in simulation, with an objective of pick and place mechanism.
 ## Introduction
 A robotic arm is a type of mechanical arm, usually programmable, with similar functions
 to a human arm. A robotic arm can be used for automating various tasks which reduces
