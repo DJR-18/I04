@@ -10,7 +10,7 @@ Suksha Kiran,
 Rohit Karatagi,
 Pranav Sudheer
 ## Acknowledgements
-
+https://in.mathworks.com/help/robotics/ug/pick-and-place-workflow-using-stateflow.html
 ## Aim
 The project aims to develop a robotic arm, in simulation, with an objective of pick and
 place mechanism. We’ll mainly simulate the workspace,forward  kinematics and inverse
@@ -33,7 +33,7 @@ effector. The end-effector/gripper is a device or tool that connects at the end 
 This is inverse kinematics block where we give translation vector which gets converted to homogeneous matrix and which gets extracted to angles through
 inv kinematics block. The inverseKinematics System object creates an inverse kinematic (IK) solver to calculate joint configurations for a desired end-
 effector pose based on a specified rigid body tree model.
-## Robot manipulator
+## Robot arm manipulator
 ![WhatsApp Image 2023-05-08 at 17 52 39](https://github.com/DJR-18/I04/assets/122470780/bc820556-da53-4fe1-b00e-d9ad8516d0ca)
 ![WhatsApp Image 2023-05-08 at 17 52 37](https://github.com/DJR-18/I04/assets/122470780/ec80d5c1-218e-4824-9071-351078f7a8f2)
 ## Final block system
@@ -41,7 +41,9 @@ effector pose based on a specified rigid body tree model.
 This is the final block system where first port of scope is the actual motion second
 port gives the ideal motion and the third port gives the velocity.
 ## Conclusion
-
+A robotic arm system can provide greater reliability in polishing workpieces and smart manufacturing. The robot  controller  dynamics  and  dynamics  are
+then analyzed  and  simulated  in  the  Matlab/Simulink environment with the Robotics toolkit. In the future, we will study the creation of robotic
+trajectories and control forces in industrial applications.
 ## References
 https://ch.mathworks.com/help/sm/getting-started-with-simmechanics.html
 
