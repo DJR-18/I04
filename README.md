@@ -19,6 +19,9 @@ to a human arm. A robotic arm can be used for automating various tasks which red
 human effort which in turn will increase productivity.
 
 ![image](https://github.com/DJR-18/I04/assets/122470780/5522385e-4698-4553-ac40-2a70794c7922)
+## Trajectory Generation
+The aim of the trajectory generation is to generate inputs to the motion control system which ensures that the planned trajectory is executed. We chose a polynomial trajectory generation method to
+produce a trajectory with the waypoints, timepoints and velocity points given as an input to the control system. The output translation vector goes as an input to the Inverse Kinematics block.
 ## Forward Kinematics
 ![WhatsApp Image 2023-05-08 at 17 52 38](https://github.com/DJR-18/I04/assets/122470780/70fe8c38-aff5-4f88-8764-e444a4a46a70)
 This is forward kinematics block which receives angles and gives homogeneous matrix which gets converted to translation matrix and hence we get our
