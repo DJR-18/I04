@@ -1,4 +1,11 @@
-# I04
+---
+layout: post
+title: "Robotic Arm (Simulink)"
+description: "We aim to develop a robotic arm, using Fusion360 & Simulink, with an objective of pick and place mechanism."
+categories: envision
+thumbnail: "thumbnail.jpeg"
+year: 2023
+---
 ### Project Guide
 Shivani Chanda - RAS Chair
 ### Mentors
