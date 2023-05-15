@@ -1,4 +1,3 @@
-### I04
 ---
 layout: post
 title: "Robotic Arm (Simulink)"
